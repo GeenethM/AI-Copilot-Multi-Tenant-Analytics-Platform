@@ -1,0 +1,14 @@
+# Core agent framework
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+
+# LLM providers — install only the one(s) you plan to use
+langchain-openai>=0.2.0           # for OpenAI (GPT-4o, etc.)
+langchain-anthropic>=0.2.0        # for Anthropic (Claude)
+langchain-google-genai>=2.0.0     # for Google (Gemini)
+
+# Configuration
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0

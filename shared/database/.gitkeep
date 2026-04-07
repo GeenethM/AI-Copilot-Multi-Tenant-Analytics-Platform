@@ -1,0 +1,2 @@
+# Shared database utilities will live here.
+# Phase: Multi-tenant PostgreSQL layer (planned for a future step)
