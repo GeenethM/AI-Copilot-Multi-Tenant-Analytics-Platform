@@ -95,6 +95,12 @@ logs/
 *.sqlite3
 pgdata/
 
+# ChromaDB vector store (tenant data — never commit)
+chroma_db/
+
+# Temporary test scripts
+test_upload.py
+
 # -----------------------------------------------------------------------------
 # Docker
 # -----------------------------------------------------------------------------
@@ -127,3 +133,4 @@ desktop.ini
 *.iml
 *.suo
 *.user
+WhenStart.txt

@@ -26,7 +26,13 @@ class Settings(BaseSettings):
     # 0.0 = deterministic / consistent answers (recommended for business agents)
     temperature: float = 0.0
 
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
+    # ── Database ──────────────────────────────────────────────────────────────
+    # Shared PostgreSQL connection string (multi-tenant layer)
+    database_url: str = (
+        "postgresql+asyncpg://postgres:password@localhost:5432/analytics_platform"
+    )
+
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
 
 @lru_cache
